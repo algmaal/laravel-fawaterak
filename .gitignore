@@ -1,0 +1,47 @@
+# Dependencies
+/vendor/
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Laravel
+.env
+.env.backup
+.env.production
+
+# Testing
+.phpunit.cache/
+coverage/
+.phpunit.result.cache
+
+# Logs
+*.log
+storage/logs/*.log
+
+# Cache
+bootstrap/cache/
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/views/
+
+# Compiled assets
+/public/hot
+/public/storage
+/storage/*.key
+
+# Package development
+composer.lock
+package-lock.json
+yarn.lock
+
+# Build artifacts
+build/
+dist/
