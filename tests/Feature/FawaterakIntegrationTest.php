@@ -40,15 +40,15 @@ class FawaterakIntegrationTest extends TestCase
         Event::fake();
 
         // Mock the webhook processing
-        $this->postJson('/fawaterak/webhook', [
+        $response = $this->postJson('/fawaterak/webhook', [
             'invoice_key' => 'test_key',
             'status' => 'paid',
         ], [
             'X-Fawaterak-Signature' => 'test_signature',
         ]);
 
-        // Check if events would be fired (in real scenario)
-        // This is a basic test structure
+        // Basic assertion to ensure the test has some validation
+        $this->assertNotEquals(404, $response->getStatusCode());
     }
 
     public function test_services_are_bound_in_container()
@@ -59,9 +59,13 @@ class FawaterakIntegrationTest extends TestCase
 
     public function test_facade_methods_are_accessible()
     {
-        // This would require mocking the HTTP client in a real test
-        $this->assertTrue(method_exists(Fawaterak::class, 'createPayment'));
-        $this->assertTrue(method_exists(Fawaterak::class, 'getPayment'));
-        $this->assertTrue(method_exists(Fawaterak::class, 'isPaymentSuccessful'));
+        // Test that the facade resolves to the correct service
+        $service = Fawaterak::getFacadeRoot();
+        $this->assertInstanceOf(\Algmaal\LaravelFawaterak\Contracts\PaymentServiceInterface::class, $service);
+
+        // Test that the service has the expected methods
+        $this->assertTrue(method_exists($service, 'createPayment'));
+        $this->assertTrue(method_exists($service, 'getPayment'));
+        $this->assertTrue(method_exists($service, 'isPaymentSuccessful'));
     }
 }
