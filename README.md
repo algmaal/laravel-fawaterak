@@ -22,23 +22,9 @@
 
 ## التثبيت
 
-### الطريقة الأولى (المفضلة - الإصدار المستقر):
-
 ```bash
 composer require algmaal/laravel-fawaterak
 ```
-
-### الطريقة الثانية (للتطوير والاختبار):
-
-```bash
-# إضافة repository GitHub
-composer config repositories.algmaal-fawaterak vcs https://github.com/algmaal/laravel-fawaterak.git
-
-# تثبيت الحزمة
-composer require algmaal/laravel-fawaterak:dev-main
-```
-
-> **ملاحظة**: استخدم الطريقة الأولى للحصول على الإصدار المستقر. الطريقة الثانية مخصصة للحصول على آخر التحديثات من التطوير.
 
 نشر ملف التكوين:
 
