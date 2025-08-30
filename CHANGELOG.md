@@ -2,6 +2,13 @@
 
 All notable changes to `laravel-fawaterak` will be documented in this file.
 
+## [1.0.3] - 2024-08-30
+
+### Added
+
+- GitHub webhook integration for Packagist auto-updates
+- Repository description and proper GitHub setup
+
 ## [1.0.0] - 2024-08-30
 
 ### Added
