@@ -22,11 +22,19 @@
 
 ## التثبيت
 
-يمكنك تثبيت الحزمة عبر Composer:
+### الطريقة الأولى (المفضلة - بعد النشر على Packagist):
 
 ```bash
 composer require algmaal/laravel-fawaterak
 ```
+
+### الطريقة الثانية (مؤقتة - للتطوير والاختبار):
+
+```bash
+composer require algmaal/laravel-fawaterak:dev-main
+```
+
+> **ملاحظة**: الطريقة الأولى ستكون متاحة بعد اكتمال نشر الحزمة على Packagist. الطريقة الثانية مخصصة للاختبار والتطوير في الوقت الحالي.
 
 نشر ملف التكوين:
 
@@ -269,5 +277,13 @@ composer test-coverage
 ## الدعم
 
 - [التوثيق الرسمي لـ Fawaterak](https://fawaterak-api.readme.io/)
+- [GitHub Repository](https://github.com/algmaal/laravel-fawaterak)
 - [GitHub Issues](https://github.com/algmaal/laravel-fawaterak/issues)
+- [Packagist Package](https://packagist.org/packages/algmaal/laravel-fawaterak)
 - [البريد الإلكتروني](mailto:mohamedalgamal@gmail.com)
+
+## حالة النشر
+
+- ✅ **GitHub**: متاح ومحدث
+- 🔄 **Packagist**: قيد النشر (استخدم `dev-main` مؤقتاً)
+- ✅ **Laravel 12**: مدعوم ومختبر

@@ -11,9 +11,19 @@
 
 ### 1. تثبيت الحزمة
 
+#### الطريقة الأولى (المفضلة - بعد النشر على Packagist):
+
 ```bash
 composer require algmaal/laravel-fawaterak
 ```
+
+#### الطريقة الثانية (مؤقتة - للتطوير والاختبار):
+
+```bash
+composer require algmaal/laravel-fawaterak:dev-main
+```
+
+> **ملاحظة**: إذا لم تعمل الطريقة الأولى، استخدم الطريقة الثانية حتى يكتمل نشر الحزمة على Packagist.
 
 ### 2. نشر ملف التكوين
 
