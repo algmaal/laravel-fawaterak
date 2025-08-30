@@ -8,7 +8,7 @@
 
 ## المميزات
 
-- ✅ دعم Laravel 10+ و 11+
+- ✅ دعم Laravel 10+ و 11+ و 12+
 - ✅ تكامل كامل مع Fawaterak API
 - ✅ دعم جميع طرق الدفع (Visa/Mastercard، Fawry، Meeza، Aman، Basta)
 - ✅ معالجة Webhooks التلقائية
