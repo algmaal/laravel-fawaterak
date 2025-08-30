@@ -2,9 +2,10 @@
 
 All notable changes to `laravel-fawaterak` will be documented in this file.
 
-## [1.0.0] - 2024-01-XX
+## [1.0.0] - 2024-08-30
 
 ### Added
+
 - Initial release
 - Full integration with Fawaterak API
 - Support for all payment methods (Visa/Mastercard, Fawry, Meeza, Aman, Basta)
@@ -19,6 +20,7 @@ All notable changes to `laravel-fawaterak` will be documented in this file.
 - Arabic and English documentation
 
 ### Features
+
 - `FawaterakService` for direct API communication
 - `PaymentService` for high-level payment operations
 - `WebhookController` for handling Fawaterak notifications
@@ -29,6 +31,7 @@ All notable changes to `laravel-fawaterak` will be documented in this file.
 - Comprehensive validation for all inputs
 
 ### Supported Payment Methods
+
 - Visa/Mastercard (redirect-based)
 - Fawry (code-based)
 - Meeza Mobile Wallet (QR code-based)
@@ -36,12 +39,14 @@ All notable changes to `laravel-fawaterak` will be documented in this file.
 - Basta (code-based)
 
 ### API Endpoints
+
 - `GET /api/v2/getPaymentmethods` - Retrieve available payment methods
 - `POST /api/v2/invoiceInitPay` - Initiate payment
 - `POST /api/v2/getInvoiceData` - Get transaction status
 - `POST /fawaterak/webhook` - Handle webhooks
 
 ### Configuration Options
+
 - Multi-environment support
 - Customizable HTTP client settings
 - Flexible logging configuration
