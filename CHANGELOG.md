@@ -2,6 +2,12 @@
 
 All notable changes to `laravel-fawaterak` will be documented in this file.
 
+## [Unreleased]
+
+### Fixed
+
+- Packagist webhook configuration with proper API token
+
 ## [1.0.3] - 2024-08-30
 
 ### Added
