@@ -20,6 +20,10 @@ composer require algmaal/laravel-fawaterak
 #### الطريقة الثانية (مؤقتة - للتطوير والاختبار):
 
 ```bash
+# إضافة repository GitHub
+composer config repositories.algmaal-fawaterak vcs https://github.com/algmaal/laravel-fawaterak.git
+
+# تثبيت الحزمة
 composer require algmaal/laravel-fawaterak:dev-main
 ```
 
